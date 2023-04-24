@@ -55,14 +55,14 @@ namespace Nutty2D {
 			if (!hasWin) {
 				AudioManager.Instance.PlayLoseSound();
 				optionNuttyImage.sprite = ripSprite;
-				optionCanvasText.text = "Emh, sei forse abituato ad alzare il gomito?";
+				optionCanvasText.text = "Non è andata benissimo...";
 				resumeButton.SetActive(false);
 			}
 			
 			else {
 				AudioManager.Instance.PlayWinSound();
 				optionNuttyImage.sprite = happySprite;
-				optionCanvasText.text = "FOOOORTE, sei stato bravo!";
+				optionCanvasText.text = "FORTE, sei stato bravo!";
 				resumeButton.SetActive(false);
 				nextLevel.SetActive(true);
 			}
